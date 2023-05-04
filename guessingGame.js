@@ -12,8 +12,12 @@ console.log(randomNumber);
 goButton.addEventListener("click", function(){
     const guess = parseInt(inputBar.value);
     console.log(`${guess}`);
-    if(guess === randomNumber){
-        console.log("true");
-    };
+    if (guess === randomNumber){
+        console.log("YOU WIN!!!!");
+    } else if (guess < randomNumber){
+        console.log("You guessed too low");
+    } else if (guess > randomNumber){
+        console.log("You guessed too high");
+    }
 
-})
+}) 
